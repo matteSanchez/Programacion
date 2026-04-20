@@ -1,0 +1,55 @@
+### 1. Definiciones Fundamentales
+*   **Palabra Reservada:** Identificadores que el usuario **no puede usar** para nombrar variables o funciones.
+*   **Identificador:** Conjunto alfanumérico para identificar entidades (clases, funciones, variables).
+*   **Constante:** Valores que **no cambian** durante la ejecución. Se definen con `DEFINE`.
+*   **Declaración:** Asocia un **tipo de dato** a un grupo de variables.
+*   **Semántica:** Define el **significado** de las instrucciones.
+
+### 2. Cualidades y Buenas Prácticas
+*   **Integridad:** Corrección de los cálculos.
+*   **Modularidad:** Dividir el programa en **pequeñas subtareas** o módulos.
+*   **Eficiencia:** Velocidad de ejecución y uso eficiente de **memoria**.
+*   **Claridad:** Facilidad de lectura y lógica subyacente.
+*   **Buenas Prácticas:** Comentar propósito y resultado esperado, usar **sangría (indentación)** por bloque, y escribir código simple/directo.
+*   **Regla de Oro:** Siempre **inicializar** contadores y sumadores.
+
+### 3. Proceso, Acción y Estado
+*   **Proceso:** Conjunto ordenado de acciones para transformar un estado inicial en uno final.
+*   **Acción:** Acontecimiento que produce un **cambio** en un tiempo finito.
+*   **Estado:** Situación del programa definida por los **valores de sus variables** en un instante `t`.
+*   **Refinamiento Sucesivo:** Técnica de diseño **Top-Down** (descendente) que descompone un proceso general en acciones más pequeñas y detalladas.
+
+### 4. Estructuras de Control de Flujo
+*   **Secuencialidad:** Instrucciones ejecutadas una tras otra de arriba hacia abajo.
+*   **Selección (`if`, `switch`):** Toma de decisiones basadas en condiciones lógicas.
+*   **Iteración (`for`, `while`, `do-while`):** Repetición de instrucciones múltiples veces.
+
+#### Detalles Específicos:
+*   **`switch`:** Solo compara **igualdad**. El selector debe ser **`int` o `char`** (nunca `float` ni `double`). La sentencia **`break`** es necesaria para salir del bloque; si falta, sigue ejecutando el siguiente `case`.
+*   **`while`:** Evalúa la condición **antes** de entrar al ciclo (puede no ejecutarse nunca).
+*   **`do-while`:** Evalúa la condición **al final** (se ejecuta al menos una vez).
+*   **`for`:** Se usa cuando se conoce el **número fijo de veces** a iterar. En C, suele inicializarse en 0.
+
+### 5. Operadores y Tipos de Datos
+*   **Relacionales:** `>` (mayor), `<` (menor), `>=` (mayor o igual), `<=` (menor o igual), `==` (igual), `!=` (distinto).
+*   **Lógicos:** `&&` (AND), `||` (OR), `!` (NOT).
+
+#### Tabla de Formatos (`printf`/`scanf`):
+| Código | Tipo de Dato |
+| :--- | :--- |
+| **`%d` / `%i`** | Entero decimal (`int`) |
+| **`%f` / `%g`** | Real (`float`) |
+| **`%c`** | Carácter individual (`char`) |
+| **`%s`** | Cadena de caracteres (string) |
+| **`%lf`** | Real de doble precisión (`long double`) |
+
+### 6. Funciones de Entrada/Salida Estándar
+*   **`getchar` / `putchar`:** Entrada/salida de **caracteres individuales**.
+*   **`gets` / `puts`:** Entrada/salida de **cadenas de caracteres**.
+*   **`scanf` / `printf`:** Entrada/salida **con formato** (números, caracteres, cadenas).
+
+### 7. Tips para el Multiple Choice (Basado en el Desafío)
+*   **Patrones de Bucles:** Si te piden una matriz triangular superior, busca la condición `j >= i` en los bucles anidados.
+*   **Secuencias Descendentes:** Un bucle para imprimir del 10 al 1 usa `i--` y la condición `i > 0`.
+*   **Pares/Impares:** Se detectan con el operador módulo: `num % 2 == 0` es par.
+*   **Salidas de Código:** Lee bien si el operador es `i++` (post-incremento) o `++i` (pre-incremento), ya que cambia el valor que se procesa en esa línea.
