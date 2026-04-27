@@ -1,0 +1,167 @@
+🚀 Machete PRO – Programación en C
+<p align="center"> <img src="https://img.shields.io/badge/Lenguaje-C-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Nivel-Parcial-success?style=for-the-badge"> <img src="https://img.shields.io/badge/Estado-Listo-brightgreen?style=for-the-badge"> <img src="https://img.shields.io/badge/Uso-Machete-orange?style=for-the-badge"> </p> <p align="center"> Guía rápida y práctica para resolver ejercicios típicos de <b>Programación en C</b> en parciales. </p>
+📑 Índice
+📌 Estructura básica
+📌 Tipos de datos
+📌 Operadores
+📌 Condicionales
+📌 Ciclos
+🔥 Patrones clave
+📌 Arrays
+🔥 Búsqueda y recorridos
+📌 Strings
+❌ Errores comunes
+🧠 Checklist
+🚀 Plantilla universal
+⭐ Tips finales
+📌 1. Estructura básica
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    scanf("%d", &x);
+    printf("%d", x);
+
+    return 0;
+}
+
+⬆️ Volver al índice
+
+📌 2. Tipos de datos
+Tipo	scanf	printf
+int	%d	%d
+float	%f	%f
+char	%c	%c
+int a;
+float b;
+char c;
+
+scanf("%d", &a);
+scanf("%f", &b);
+scanf(" %c", &c);
+
+⬆️ Volver al índice
+
+📌 3. Operadores
+🔹 Comparación
+==  !=  >  <  >=  <=
+🔹 Lógicos
+&&  ||  !
+
+⬆️ Volver al índice
+
+📌 4. Condicionales
+if (condicion) {
+    // código
+} else if (otra) {
+    // código
+} else {
+    // código
+}
+
+⬆️ Volver al índice
+
+📌 5. Ciclos
+for (int i = 0; i < n; i++) {}
+
+while (condicion) {}
+
+do {} while (condicion);
+
+⬆️ Volver al índice
+
+🔥 6. Patrones clave
+🔹 Acumulador + contador
+int suma = 0, contador = 0, num;
+
+for (int i = 0; i < n; i++) {
+    scanf("%d", &num);
+    suma += num;
+    contador++;
+}
+🔹 Promedio
+float promedio = (float)suma / contador;
+🔹 Validación
+do {
+    scanf("%d", &num);
+} while (num <= 0);
+
+⬆️ Volver al índice
+
+📌 7. Arrays
+int v[5];
+
+for (int i = 0; i < 5; i++) {
+    scanf("%d", &v[i]);
+}
+
+⬆️ Volver al índice
+
+🔥 8. Búsqueda y recorridos
+🔹 Buscar elemento
+int pos = -1;
+
+for (int i = 0; i < n; i++) {
+    if (v[i] == buscado) {
+        pos = i;
+        break;
+    }
+}
+🔹 Máximo
+int max = v[0];
+
+for (int i = 1; i < n; i++) {
+    if (v[i] > max) {
+        max = v[i];
+    }
+}
+
+⬆️ Volver al índice
+
+📌 9. Strings
+char nombre[20];
+
+scanf("%s", nombre);
+printf("%s", nombre);
+
+⬆️ Volver al índice
+
+❌ 10. Errores comunes
+= en vez de ==
+olvidar & en scanf
+i <= n
+loop infinito
+división entera
+float prom = (float)suma / contador;
+
+⬆️ Volver al índice
+
+🧠 11. Checklist
+ ¿Usé ==?
+ ¿Puse &?
+ ¿El ciclo termina?
+ ¿No me paso del array?
+ ¿Uso float en promedio?
+
+⬆️ Volver al índice
+
+🚀 12. Plantilla universal
+#include <stdio.h>
+
+int main() {
+    int n, num, suma = 0;
+
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &num);
+        suma += num;
+    }
+
+    printf("%d", suma);
+
+    return 0;
+}
+
+⬆️ Volver al índice
